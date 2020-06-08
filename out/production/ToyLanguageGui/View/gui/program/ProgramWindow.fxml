@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="programStateListView" layoutX="14.0" layoutY="48.0" prefHeight="126.0" prefWidth="844.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="145.0" text="Number of program states:" />
+      <TextField fx:id="numberOfProgramStatesTestField" layoutX="167.0" layoutY="15.0" />
+      <Button fx:id="executeButton" layoutX="863.0" layoutY="48.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="122.0" text="EXECUTE ONE STEP" />
+      <Label layoutX="14.0" layoutY="182.0" prefHeight="26.0" prefWidth="146.0" text="Exe stack" />
+      <ListView fx:id="executionStackListView" layoutX="14.0" layoutY="208.0" prefHeight="138.0" prefWidth="972.0" />
+      <Label layoutX="14.0" layoutY="365.0" prefHeight="26.0" prefWidth="67.0" text="Heap Table" />
+      <TableView fx:id="heapTableView" layoutX="14.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapAddressTableColumn" maxWidth="100.0" prefWidth="100.0" text="Address" />
+          <TableColumn fx:id="heapValueTableColumn" prefWidth="100.0" text="Value" />
+        </columns>
+      </TableView>
+      <TableView fx:id="symTableView" layoutX="785.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="symVariableTableColumn" prefWidth="100.0" text="Variable" />
+          <TableColumn fx:id="symValueTableColumn" prefWidth="100.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="fileTableListView" layoutX="544.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="outListView" layoutX="274.0" layoutY="391.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="274.0" layoutY="365.0" prefHeight="26.0" prefWidth="67.0" text="Out" />
+      <Label layoutX="544.0" layoutY="365.0" prefHeight="26.0" prefWidth="67.0" text="File table" />
+      <Label layoutX="785.0" layoutY="365.0" prefHeight="26.0" prefWidth="74.0" text="Sym Table" />
+      <Label layoutX="14.0" layoutY="597.0" prefHeight="26.0" prefWidth="97.0" text="SemaphoreTable" />
+      <TableView fx:id="semaphoreTableView" layoutX="12.0" layoutY="623.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="indexTableColumn" prefWidth="100.0" text="Index" />
+          <TableColumn fx:id="listTableColumn" prefWidth="100.0" text="List" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
